@@ -8,8 +8,19 @@
  * vice-versa.
 */
 
+function flipColor(objInput) {
+  var color = objInput.color
+  if (color === 'blue') {
+    objInput = {color: 'red'}
 
 
+    }else if (color === 'red') {
+      objInput = {color: 'blue'}
+
+    }
+    return objInput
+
+}
 
 
 

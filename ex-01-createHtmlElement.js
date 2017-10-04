@@ -14,7 +14,12 @@
  *  => '<h1 class="grid small-section">Lorem ipsum dolor sit amet.</h1>'
 */
 
-
+function createHtmlElement(objInput) {
+  var simpleHTML;
+  simpleHTML = '<' + objInput.element + ' class="' + objInput.classNames + '">' + objInput.textContent + '</' + objInput.element +'>'
+  console.log(simpleHTML);
+  return simpleHTML
+}
 
 
 

@@ -6,7 +6,18 @@
  * and `lastName` properties that have string values.
  *
 **/
+function createNameObject(stringInput) {
+  // console.log(stringInput);
+  stringInput = stringInput.split(' ')
+  console.log(stringInput);
 
+  var objetNames = {
+    firstName: stringInput[0],
+    lastName: stringInput[1]
+  }
+  // console.log(objetNames);
+  return objetNames
+}
 
 
 
@@ -24,5 +35,5 @@ console.assert(nameObj2.firstName === 'Felipe')
 console.assert(nameObj2.lastName === 'Tortuga')
 
 var nameObj3 = createNameObject("Lupe Maria")
-console.assert(nameObj2.firstName === 'Lupe')
-console.assert(nameObj2.lastName === 'Maria')
+console.assert(nameObj3.firstName === 'Lupe')
+console.assert(nameObj3.lastName === 'Maria')

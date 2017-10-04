@@ -19,9 +19,24 @@
  *
 */
 
+// crear funcion que acepta 3 stringInput
+// convertir en arrayString
+// la funcion debe retornar un objeto utilizando el primer nombre como parametrp
+// y el apellido como valor
+
+function makeNamesObject(inputUno, inputDos, inputTres) {
+  inputUno = inputUno.split(' ')
+  inputDos = inputDos.split(' ')
+  inputTres = inputTres.split(' ')
+
+  var objet = {[inputUno[0]]: inputUno[1],
+              [inputDos[0]]: inputDos[1],
+              [inputTres[0]]: inputTres[1]}
+  // console.log(objet);
+  return objet
 
 
-
+}
 
 
 
