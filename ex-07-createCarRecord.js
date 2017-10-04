@@ -19,7 +19,28 @@
 **/
 
 
+function createCarRecord(make, model, year, license) {
+  var carInformation = {
+    make: make,
+    model: model,
+    year: year,
+    license: license
+  }
 
+  if (carInformation.make === undefined || carInformation.model === undefined ||  carInformation.year === undefined  || carInformation.license === undefined  ) {
+    console.log("new record must have make, model, year, and license values");
+    return "new record must have make, model, year, and license values"
+
+  } else if (typeof carInformation.make !== 'string'  ||  typeof carInformation.model !== 'string' ||  typeof carInformation.license !== 'string') {
+    console.log('1st, 2nd, and 4th arguments must be String');
+    return '1st, 2nd, and 4th arguments must be String'
+  } else if (typeof carInformation.year === 'string') {
+    console.log('3rd argument must be a Number');
+    return '3rd argument must be a Number'
+
+  }
+  return carInformation
+}
 
 
 
